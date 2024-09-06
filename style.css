@@ -122,6 +122,9 @@ footer p {
     border: 2px solid black;
     background-color: rgb(246, 240, 233);
     box-shadow: 2px 3px 4px rgb(100, 100, 100);
+    border-radius: 20px;
+    padding-bottom: 5px;
+    overflow: hidden;
     /* max-height: 100dvh; */
 
 }
