@@ -59,8 +59,20 @@ img {
     background-color: rgb(246, 240, 233);
     box-shadow: 2px 3px 4px rgb(100, 100, 100);
     flex-direction: column;
-    
 }
+
+ /* .launch-container.portrait-image {
+    flex-direction: row;
+
+ }
+
+
+.portrait-image img{
+    max-width: 50%;
+    height: auto;
+    max-height: 400px;
+
+} */
 
 .info-section {
     width: 100%;
@@ -123,8 +135,10 @@ footer p {
     background-color: rgb(246, 240, 233);
     box-shadow: 2px 3px 4px rgb(100, 100, 100);
     border-radius: 20px;
-    padding-bottom: 5px;
+
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     /* max-height: 100dvh; */
 
 }
@@ -132,6 +146,17 @@ footer p {
     display: flex;
     max-height: none;
 } */
+
+.launch-deatils-container.portrait-image{
+    flex-direction: row;
+}
+
+.portrait-image img {
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    max-height: 100%;
+}
 
 
 

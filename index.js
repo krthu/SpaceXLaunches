@@ -51,12 +51,13 @@ const getLaunchElement = (launch) => {
 
     const img = document.createElement('img');
     img.src = launch.links.flickr.original;
+
     container.appendChild(img);
 
     const infoElement = getInfoElement(launch);
     container.addEventListener('click', () => {
-        toggleOverlayShow()
-        showLaunchDetails(launch)
+        toggleOverlayShow();
+        showLaunchDetails(launch);
     
     });
 
@@ -111,10 +112,19 @@ loadButton.addEventListener('click', () => {
 const showLaunchDetails = (launch) => {
     const container = document.createElement('section');
     container.classList.add('launch-deatils-container');
+    
 
     const img = document.createElement('img');
     img.src = launch.links.flickr.original;
-    img.classList.add('detaild-image');
+
+    if(img.width < img.height) {
+        console.log('Portrait');
+        container.classList.add('portrait-image');
+    } else {
+        console.log('Landscape');
+    }
+
+    // img.classList.add('detaild-image');
     container.appendChild(img);
 
     console.log(launch)
